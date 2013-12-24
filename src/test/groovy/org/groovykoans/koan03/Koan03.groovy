@@ -92,6 +92,9 @@ class Koan03 extends GroovyTestCase {
         // class to set name to 'Anonymous' if no name has been specified.
         def nameObject = new NameWithDefaultValue()
         assert nameObject.name == 'Anonymous'
+        
+        nameObject = new NameWithDefaultValue('Llarry')
+        assert nameObject.name == 'Llarry'
     }
 
 }
